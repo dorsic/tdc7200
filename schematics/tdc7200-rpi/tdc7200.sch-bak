@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Connecting TDC7200 to Raspberry PI"
+Date "2020-12-18"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:TDC7200 U1
+U 1 1 5FDD47CB
+P 6100 3700
+F 0 "U1" H 6350 4350 50  0000 C CNN
+F 1 "TDC7200" H 6450 4250 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" V 6850 3400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41594B.pdf" H 6100 3700 50  0001 C CNN
+	1    6100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Raspberry_Pi_2_3 J4
+U 1 1 5FDDE3E3
+P 9150 3500
+F 0 "J4" H 9050 5000 50  0000 C CNN
+F 1 "Raspberry_Pi_2-4" H 8750 4900 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Horizontal" H 9150 3500 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 9150 3500 50  0001 C CNN
+	1    9150 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FDE524E
+P 4800 3600
+F 0 "R1" V 4593 3600 50  0000 C CNN
+F 1 "50" V 4684 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4730 3600 50  0001 C CNN
+F 3 "~" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FDE6B7C
+P 5100 3700
+F 0 "R2" V 4893 3700 50  0000 C CNN
+F 1 "50" V 4984 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 5030 3700 50  0001 C CNN
+F 3 "~" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FDE76A6
+P 4350 3250
+F 0 "R3" H 4280 3204 50  0000 R CNN
+F 1 "100" H 4280 3295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4280 3250 50  0001 C CNN
+F 3 "~" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FDE7CFC
+P 4350 2950
+F 0 "R4" H 4280 2904 50  0000 R CNN
+F 1 "100" H 4280 2995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4280 2950 50  0001 C CNN
+F 3 "~" H 4350 2950 50  0001 C CNN
+	1    4350 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FDE851D
+P 7800 2250
+F 0 "R6" H 7730 2204 50  0000 R CNN
+F 1 "10k" H 7730 2295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7730 2250 50  0001 C CNN
+F 3 "~" H 7800 2250 50  0001 C CNN
+	1    7800 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FDE8BFB
+P 5250 3400
+F 0 "R5" V 5043 3400 50  0000 C CNN
+F 1 "1k" V 5134 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 5180 3400 50  0001 C CNN
+F 3 "~" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FDE95BB
+P 7350 3500
+F 0 "C1" V 7098 3500 50  0000 C CNN
+F 1 "105" V 7189 3500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 7388 3350 50  0001 C CNN
+F 3 "~" H 7350 3500 50  0001 C CNN
+	1    7350 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FDEA664
+P 6950 3400
+F 0 "C2" V 6698 3400 50  0000 C CNN
+F 1 "104" V 6789 3400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 6988 3250 50  0001 C CNN
+F 3 "~" H 6950 3400 50  0001 C CNN
+	1    6950 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5FDECE54
+P 7050 2250
+F 0 "C3" H 7168 2296 50  0000 L CNN
+F 1 "1,0+uF" H 7168 2205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P2.50mm" H 7088 2100 50  0001 C CNN
+F 3 "~" H 7050 2250 50  0001 C CNN
+	1    7050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5FDEE916
+P 3700 3100
+F 0 "J1" H 3628 3338 50  0000 C CNN
+F 1 "START" H 3628 3247 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_031-6575_Horizontal" H 3700 3100 50  0001 C CNN
+F 3 " ~" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5FDF022A
+P 3700 3700
+F 0 "J2" H 3628 3938 50  0000 C CNN
+F 1 "STOP" H 3628 3847 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_031-6575_Horizontal" H 3700 3700 50  0001 C CNN
+F 3 " ~" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5FDF0C27
+P 3700 4300
+F 0 "J3" H 3628 4538 50  0000 C CNN
+F 1 "1-16MHz Clock" H 3628 4447 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_031-6575_Horizontal" H 3700 4300 50  0001 C CNN
+F 3 " ~" H 3700 4300 50  0001 C CNN
+	1    3700 4300
+	-1   0    0    -1  
+$EndComp
+Text Notes 3100 4950 0    50   ~ 0
+Using TangNano FGPA as Clock Divider, use these PINS\n17 - Input CLOCK signal (conn J2)\n29 - STOP signal (conn J3)
+Wire Wire Line
+	5400 3700 5250 3700
+$Comp
+L power:Earth #PWR0101
+U 1 1 5FE06E9D
+P 3700 3900
+F 0 "#PWR0101" H 3700 3650 50  0001 C CNN
+F 1 "Earth" H 3700 3750 50  0001 C CNN
+F 2 "" H 3700 3900 50  0001 C CNN
+F 3 "~" H 3700 3900 50  0001 C CNN
+	1    3700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4300 4650 4300
+$Comp
+L power:Earth #PWR0102
+U 1 1 5FE0A545
+P 3700 4500
+F 0 "#PWR0102" H 3700 4250 50  0001 C CNN
+F 1 "Earth" H 3700 4350 50  0001 C CNN
+F 2 "" H 3700 4500 50  0001 C CNN
+F 3 "~" H 3700 4500 50  0001 C CNN
+	1    3700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0103
+U 1 1 5FE0AEA7
+P 3700 3300
+F 0 "#PWR0103" H 3700 3050 50  0001 C CNN
+F 1 "Earth" H 3700 3150 50  0001 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "~" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0104
+U 1 1 5FE0B7A4
+P 5400 4000
+F 0 "#PWR0104" H 5400 3750 50  0001 C CNN
+F 1 "Earth" H 5400 3850 50  0001 C CNN
+F 2 "" H 5400 4000 50  0001 C CNN
+F 3 "~" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3700 4950 3700
+$Comp
+L power:Earth #PWR0105
+U 1 1 5FE0EA1F
+P 4350 3400
+F 0 "#PWR0105" H 4350 3150 50  0001 C CNN
+F 1 "Earth" H 4350 3250 50  0001 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "~" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3600 4950 3600
+Wire Wire Line
+	4650 3600 4650 3100
+Wire Wire Line
+	4650 3100 4350 3100
+Connection ~ 4350 3100
+Wire Wire Line
+	4350 3100 3900 3100
+Text Notes 3100 2750 0    50   ~ 0
+Using RPi for starting the measurement \nconnect the J1 to PIN 29
+Wire Wire Line
+	4350 2800 6800 2800
+Wire Wire Line
+	9050 2400 9050 2200
+Wire Wire Line
+	9050 2100 7800 2100
+Wire Wire Line
+	6800 2100 6800 2800
+Connection ~ 6800 2800
+$Comp
+L power:Earth #PWR0106
+U 1 1 5FE19ACF
+P 7500 3500
+F 0 "#PWR0106" H 7500 3250 50  0001 C CNN
+F 1 "Earth" H 7500 3350 50  0001 C CNN
+F 2 "" H 7500 3500 50  0001 C CNN
+F 3 "~" H 7500 3500 50  0001 C CNN
+	1    7500 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0107
+U 1 1 5FE1C16F
+P 7100 3400
+F 0 "#PWR0107" H 7100 3150 50  0001 C CNN
+F 1 "Earth" H 7100 3250 50  0001 C CNN
+F 2 "" H 7100 3400 50  0001 C CNN
+F 3 "~" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7050 2100
+Wire Wire Line
+	7050 2100 6800 2100
+$Comp
+L power:Earth #PWR0108
+U 1 1 5FE1D567
+P 7050 2400
+F 0 "#PWR0108" H 7050 2150 50  0001 C CNN
+F 1 "Earth" H 7050 2250 50  0001 C CNN
+F 2 "" H 7050 2400 50  0001 C CNN
+F 3 "~" H 7050 2400 50  0001 C CNN
+	1    7050 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 2200
+Wire Wire Line
+	9050 2200 9050 2100
+Wire Wire Line
+	6800 3900 8350 3900
+Wire Wire Line
+	6800 3800 8350 3800
+Wire Wire Line
+	8000 3600 8000 4000
+Wire Wire Line
+	8000 4000 8350 4000
+Wire Wire Line
+	6800 3600 8000 3600
+Wire Wire Line
+	6800 4000 7800 4000
+Connection ~ 7800 2100
+Wire Wire Line
+	7800 2100 7050 2100
+Wire Wire Line
+	9950 3100 10200 3100
+Wire Wire Line
+	10200 3100 10200 1900
+Wire Wire Line
+	10200 1900 5100 1900
+Wire Wire Line
+	5100 1900 5100 3400
+Wire Wire Line
+	8000 3100 8000 3300
+Wire Wire Line
+	8000 3300 8350 3300
+Connection ~ 4650 3100
+Wire Wire Line
+	4650 3100 8000 3100
+Wire Wire Line
+	7800 2400 7800 4000
+Connection ~ 6800 3400
+Wire Wire Line
+	6800 2800 6800 3400
+Wire Wire Line
+	6800 3500 7200 3500
+Wire Wire Line
+	8350 3700 6800 3700
+Wire Wire Line
+	9950 3400 10200 3400
+Wire Wire Line
+	10200 3400 10200 5100
+Wire Wire Line
+	10200 5100 7800 5100
+Wire Wire Line
+	7800 5100 7800 4000
+Connection ~ 7800 4000
+$Comp
+L power:Earth #PWR0109
+U 1 1 5FE38D2E
+P 8850 4850
+F 0 "#PWR0109" H 8850 4600 50  0001 C CNN
+F 1 "Earth" H 8850 4700 50  0001 C CNN
+F 2 "" H 8850 4850 50  0001 C CNN
+F 3 "~" H 8850 4850 50  0001 C CNN
+	1    8850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3500 5300 3500
+Wire Wire Line
+	5300 3500 5300 5000
+Wire Wire Line
+	5300 5000 10100 5000
+Wire Wire Line
+	10100 5000 10100 3500
+Wire Wire Line
+	10100 3500 9950 3500
+Wire Wire Line
+	8850 4800 8850 4850
+Wire Wire Line
+	4650 3800 4650 4300
+Wire Wire Line
+	4650 3800 5400 3800
+$EndSCHEMATC
